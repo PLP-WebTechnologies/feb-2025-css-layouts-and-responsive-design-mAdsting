@@ -1,0 +1,202 @@
+/* General body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8; /* Light background for the page */
+    color: #333; /* Default text color */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Push the main content to fill available space */
+main {
+    flex-grow: 1;
+}
+
+/* Header and Navigation Bar Styling */
+header {
+    background-color: #004aad; /* Mercedes blue */
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use Flexbox for navigation items */
+    justify-content: center; /* Center the navigation items */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+nav ul li {
+    margin: 0 20px; /* Space between navigation items */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+nav ul li a:hover {
+    color: #ccc; /* Light grey on hover */
+}
+
+/* Main Title Styling */
+#main-title {
+    color: #1a1a1a;
+    margin-top: 30px;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center; /* Ensure title is centered */
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+/* Banner Image Styling */
+.car-image {
+    width: 100%; /* Make the image span the full width of the container */
+    height: 400px; /* Set a fixed height for a banner-like appearance */
+    object-fit: cover; /* Ensure the image covers the space like a banner */
+    margin-bottom: 20px; /* Space below the image */
+    border: none; /* Remove border for a clean look */
+}
+
+/* Container for main content */
+.container {
+    flex-grow: 1; /* Allow the container to grow and fill available space */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    max-width: 1200px; /* Limit maximum width */
+    margin: 20px auto; /* Center the container on the page */
+}
+
+/* Section Styling */
+section {
+    background-color: #ffffff; /* White background for sections */
+    padding: 20px;
+    border: 1px solid #ccc; /* Add a border for separation */
+    border-radius: 8px; /* Rounded corners */
+    margin: 20px auto; /* Center the section */
+    max-width: 800px; /* Limit the width */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Section Title Styling */
+.section-title {
+    color: #004aad;
+    margin-top: 0;
+    font-size: 28px;
+    text-align: center; /* Ensure section titles are centered */
+    font-weight: bold;
+}
+
+/* Description Paragraph Styling */
+.description {
+    margin: 20px 0; /* Adjusted margin */
+    font-size: 18px;
+    color: #333;
+    text-align: justify; /* Align text for a clean look */
+    line-height: 1.8; /* Improve readability */
+}
+
+/* Styling for the Our Models section */
+.models-list {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+    text-align: left; /* Align items to the left */
+}
+
+.models-list li {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0; /* Add spacing between items */
+    font-weight: bold; /* Make the text bold */
+}
+
+/* Styling for the Contact Us section */
+#contact {
+    text-align: center;
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 20px;
+    border-top: 2px solid #ccc;
+    margin-top: 20px;
+}
+
+#contact .contact-info,
+#contact .social-media,
+#contact .showroom {
+    margin-bottom: 15px; /* Add spacing between groups */
+}
+
+#contact .social-media ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex; /* Display links inline */
+    gap: 10px; /* Add spacing between links */
+}
+
+#contact .social-media ul li a {
+    color: #004aad;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#contact .social-media ul li a:hover {
+    color: #0073e6; /* Slightly lighter blue on hover */
+}
+
+#contact p {
+    margin: 5px 0; /* Reduce spacing between paragraphs */
+    font-size: 16px;
+    color: #333;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #004aad;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row; /* Arrange items in a row for larger screens */
+        justify-content: space-around; /* Distribute space around items */
+        align-items: flex-start; /* Align items to the top */
+    }
+
+    section {
+        width: 45%; /* Sections take up less width */
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        justify-content: space-between; /* More space between items */
+    }
+
+    section {
+        width: 40%; /* Sections take up less width */
+    }
+}
+
